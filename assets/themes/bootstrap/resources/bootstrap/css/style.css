@@ -859,7 +859,8 @@ footer {
     }
 
     .navbar-nav {
-        margin: 15px 30px;
+        margin: 15px auto;
+        text-align: center;
     }
 
     .navbar-collapse {
@@ -925,21 +926,30 @@ footer {
         box-shadow: inset 0px 3px 5px 0px rgba(0, 0, 0, 0.27);
     }
 
+    .nav > li {
+        border-bottom: 1px solid white;
+    }
+
+        .nav > li:last-child {
+        border-bottom: none;
+    }
+
     #homepageLink {
         color: white;
-        border: 2px solid white;
+        border: none;
         width: 171px;
+        margin-left: 0;
     }
 
     #message {
         color: white;
-        border: 2px solid white;
+        border: none;
         width: 171px;
     }
 
     #message:hover {
         color: white;
-        border: 2px solid white;
+        border: none;
         text-decoration: none;
     }
 
