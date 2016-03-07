@@ -486,7 +486,7 @@ h1 small {
     color: #2C6EA0;
     padding-bottom: 40px;
     padding-top: 40px;
-    border-bottom: 1px solid #0F3958;
+    border-bottom: 1px solid #CBCBD0;
     margin: 0;
 }
 
@@ -786,6 +786,11 @@ footer {
     background-color: white;
 }
 
+.response {
+    width: 700px;
+    margin: auto;
+}
+
 /* =============================================================================================================
 	MEDIA QURIES 768
    ============================================================================================================= */
@@ -931,7 +936,7 @@ footer {
         border-bottom: 1px solid white;
     }
 
-        .nav > li:last-child {
+    .nav > li:last-child {
         border-bottom: none;
     }
 
@@ -983,5 +988,11 @@ footer {
 
     .navbar-default .navbar-brand {
         margin-right: -10px;
+    }
+
+    .response {
+        width: 100%;
+        margin: auto;
+        padding: 0 10px;
     }
 }
