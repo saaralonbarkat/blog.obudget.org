@@ -468,10 +468,11 @@ h1 small {
     -moz-box-shadow: inset 0px 2px 0px 0px rgba(0, 0, 0, 0.15);
     box-shadow: inset 0px 2px 0px 0px rgba(0, 0, 0, 0.15);
 
-    background: #0a1a50;
-    background: -webkit-linear-gradient(45deg, #0a1a50, #111831);
-    background: linear-gradient(45deg, #0a1a50, #111831);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0a1a50', endColorstr='#111831', GradientType=1);
+    /*background: #0a1a50;*/
+    /*background: -webkit-linear-gradient(45deg, #0a1a50, #111831);*/
+    /*background: linear-gradient(45deg, #0a1a50, #111831);*/
+    /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0a1a50', endColorstr='#111831', GradientType=1);*/
+    background-color: #F1F1F7;
 }
 
 .bottomPost-block {
