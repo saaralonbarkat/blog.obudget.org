@@ -114,7 +114,7 @@ img {
 }
 
 .mainTitel {
-    color: #3C4948;
+    color: black;
     font-size: 50px;
     font-weight: bold;
 }
@@ -208,7 +208,15 @@ h1 small {
     margin-bottom: 10px;
 }
 
-#message {
+.container > .navbar-header, .container > .navbar-collapse {
+    margin-right: -15px;
+}
+
+.topBtn {
+    margin-top: 5px;
+}
+
+#homepageLink {
     display: inline-block;
     min-width: 160px;
     text-align: center;
@@ -224,15 +232,41 @@ h1 small {
     -webkit-transition: .5s;
     /* ...and now for the proper property */
     transition: .5s;
+    margin-left: 20px;
+}
+
+#homepageLink:hover {
+    background-color: #CF0019;
+    color: white;
+    text-decoration: none;
+}
+
+#message {
+    display: inline-block;
+    min-width: 160px;
+    text-align: center;
+    border-radius: 20px;
+    margin: 8px 0;
+    padding: 6px 15px;
+    color: #3C4948;
+    cursor: pointer;
+    border: 2px solid #3C4948;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    /* ...and now for the proper property */
+    transition: .5s;
 }
 
 #message:hover {
-    background-color: #CF0019;
-    color: white;
+    color: black;
+    border: 2px solid black;
+    text-decoration: none;
 }
 
 .postList {
-    padding-top: 60px;
+    padding: 60px 0 0;
     width: 700px;
     margin: auto;
     float: none;
@@ -348,11 +382,9 @@ h1 small {
     padding-top: 4px;
     color: #CF0019;
     font-size: 35px;
-    /* border-top: 2px solid #26656F; */
-    /*font-weight: bold;*/
-    -webkit-box-shadow: inset 0px 2px 0px 0px black;
-    -moz-box-shadow: inset 0px 2px 0px 0px black;
-    box-shadow: inset 0px 2px 0px 0px black;
+    -webkit-box-shadow: inset 0px 2px 0px 0px #3c4948;
+    -moz-box-shadow: inset 0px 2px 0px 0px #3c4948;
+    box-shadow: inset 0px 2px 0px 0px #3c4948;
 }
 
 .postMonth {
@@ -429,24 +461,25 @@ h1 small {
 .bottomPost {
     width: 100%;
     margin: auto;
-    padding-top: 60px;
+    /*padding-top: 60px;*/
     /* margin-top: 45px; */
     /* background-color: white; */
     -webkit-box-shadow: inset 0px 2px 0px 0px rgba(0, 0, 0, 0.15);
     -moz-box-shadow: inset 0px 2px 0px 0px rgba(0, 0, 0, 0.15);
     box-shadow: inset 0px 2px 0px 0px rgba(0, 0, 0, 0.15);
 
-    background: #0a1a50;
-    background: -webkit-linear-gradient(45deg, #0a1a50, #111831);
-    background: linear-gradient(45deg, #0a1a50, #111831);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0a1a50', endColorstr='#111831', GradientType=1);
+    /*background: #0a1a50;*/
+    /*background: -webkit-linear-gradient(45deg, #0a1a50, #111831);*/
+    /*background: linear-gradient(45deg, #0a1a50, #111831);*/
+    /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0a1a50', endColorstr='#111831', GradientType=1);*/
+    background-color: #F1F1F7;
 }
 
 .bottomPost-block {
     width: 700px;
     margin: auto;
     float: none;
-    padding-top: 40px;
+    padding: 40px 0;
 }
 
 .bottomPost-block p {
@@ -455,6 +488,10 @@ h1 small {
     padding-top: 40px;
     border-bottom: 1px solid #0F3958;
     margin: 0;
+}
+
+.bottomPost-block p:last-child {
+    border: none;
 }
 
 .bottomPost-block a {
@@ -677,8 +714,31 @@ footer {
     margin: 0;
 }
 
+.share-page {
+    margin: auto;
+    text-align: center;
+}
+
 .shareTitel {
     text-align: center;
+    display: inline-block;
+    background-color: #8FACB1;
+    position: relative;
+    border-radius: 100px;
+    font-size: 16px;
+    padding: 0 16px;
+    margin-bottom: 25px;
+    color: white;
+}
+
+.share-page:before {
+    content: "";
+    width: 100%;
+    display: block;
+    height: 1px;
+    background-color: #8FACB1;
+    margin-top: 14px;
+    position: absolute;
 }
 
 .pagination-block {
@@ -705,7 +765,25 @@ footer {
 }
 
 #disqus_thread {
-    margin-top: 60px;
+    margin: 60px 0;
+}
+
+.pagination > li:last-child > a, .pagination > li:last-child > span {
+    border-radius: inherit;
+    padding: 10px 20px;
+}
+
+.pagination > li:last-child > a, .pagination > li:last-child > span:hover {
+    background-color: white;
+}
+
+.pagination > li:first-child > a, .pagination > li:first-child > span {
+    border-radius: inherit;
+    padding: 10px 20px;
+}
+
+.pagination > li:first-child > a, .pagination > li:first-child > span:hover {
+    background-color: white;
 }
 
 /* =============================================================================================================
@@ -774,6 +852,7 @@ footer {
     .navbar-default .navbar-toggle {
         border: 2px solid #CF0019;
         margin-bottom: 20px;
+        margin-top: 13px;
     }
 
     .navbar-default .navbar-toggle .icon-bar {
@@ -781,7 +860,8 @@ footer {
     }
 
     .navbar-nav {
-        margin: 15px 30px;
+        margin: 15px auto;
+        text-align: center;
     }
 
     .navbar-collapse {
@@ -847,9 +927,31 @@ footer {
         box-shadow: inset 0px 3px 5px 0px rgba(0, 0, 0, 0.27);
     }
 
+    .nav > li {
+        border-bottom: 1px solid white;
+    }
+
+        .nav > li:last-child {
+        border-bottom: none;
+    }
+
+    #homepageLink {
+        color: white;
+        border: none;
+        width: 171px;
+        margin-left: 0;
+    }
+
     #message {
         color: white;
-        border: 2px solid white;
+        border: none;
+        width: 171px;
+    }
+
+    #message:hover {
+        color: white;
+        border: none;
+        text-decoration: none;
     }
 
     .navbar-default .navbar-nav > li > a {
@@ -878,48 +980,8 @@ footer {
         width: 100% !important;
         overflow: scroll !important;
     }
-}
 
-/*
-Max width before this PARTICULAR table gets nasty
-This query will take effect for any screen smaller than 760px
-and also iPads specifically.
-*/
-@media only screen and (max-width: 760px),
-(min-device-width: 768px) and (max-device-width: 1024px) {
-
-    /* Force table to not be like tables anymore */
-    table, thead, tbody, th, td, tr {
-        display: block;
-    }
-
-    /* Hide table headers (but not display: none;, for accessibility) */
-    thead tr {
-        position: absolute;
-        top: -9999px;
-        left: -9999px;
-    }
-
-    tr {
-        border: 1px solid #ccc;
-    }
-
-    td {
-        /* Behave  like a "row" */
-        border: none;
-        border-bottom: 1px solid #eee;
-        position: relative;
-        padding-left: 50%;
-    }
-
-    td:before {
-        /* Now like a table header */
-        position: absolute;
-        /* Top/left values mimic padding */
-        top: 6px;
-        left: 6px;
-        width: 45%;
-        padding-right: 10px;
-        white-space: nowrap;
+    .navbar-default .navbar-brand {
+        margin-right: -10px;
     }
 }
