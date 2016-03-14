@@ -64,7 +64,7 @@ h6 {
     margin-bottom: 20px;
 }
 
-li{
+li {
     font-size: 20px;
 }
 
@@ -91,7 +91,7 @@ p {
     line-height: 28px;
 }
 
-em{
+em {
     font-style: bold !important;
     font-weight: bold;
     background-color: #CCCCD8;
@@ -129,6 +129,7 @@ ul li:before, ol li:before {
 
 img {
     width: 100%;
+    margin: 15px 0;
 }
 
 .mainTitel {
@@ -188,6 +189,7 @@ h1 small {
 
 .navbar-brand img {
     width: inherit;
+    margin: 0;
 }
 
 .navbar-header {
@@ -443,6 +445,7 @@ h1 small {
 
 .postLeft img {
     width: inherit;
+    margin: 0;
 }
 
 .post-full {
@@ -473,6 +476,7 @@ h1 small {
     padding-bottom: 10px;
     padding-top: 0;
     margin-top: 0;
+    line-height: 35px;
 }
 
 .content {
