@@ -975,7 +975,7 @@ footer {
     #message {
         color: white;
         border: none;
-        width: 171px;
+        width: 100%;
     }
 
     #message:hover {
