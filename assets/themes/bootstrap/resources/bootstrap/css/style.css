@@ -563,6 +563,7 @@ footer {
     display: inline;
     width: 33.3333333%;
     float: left;
+    font-size: 16px;
 }
 
 .share-page li a {
