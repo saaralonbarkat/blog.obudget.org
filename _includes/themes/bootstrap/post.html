@@ -1,15 +1,13 @@
 <div class="post-header">
     <div class="post-header-block">
         <div class="blogTitel">
-            <h1 class="mainPostTitel">{{ page.title }} {% if page.tagline %}
-                <small>{{page.tagline}}</small>
-                {% endif %}
-            </h1>
+            <h1 class="mainPostTitel">{{ page.title }} {% if page.tagline %} <small>{{page.tagline}}</small> {% endif %}</h1>
         </div>
     </div>
 </div>
 
 <div class="row post-full">
+    <img class="mainBanner" src="{{ page.banner }} {% if page.tagline %} <small>{{page.tagline}}</small> {% endif %}">
     <div class="col-md-12 postText">
         <!--<div class="date">-->
         <!--<span>{{ page.date | date_to_long_string }}</span><br/>-->

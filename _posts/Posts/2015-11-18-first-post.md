@@ -5,7 +5,7 @@ author: צוות מפתח התקציב
 day: 18
 month: נובמבר
 year: 2015
-profile: /assets/themes/bootstrap/resources/team.png
+profile: /assets/themes/bootstrap/resources/face/team.png
 layout: post
 tagline: null
 ---
