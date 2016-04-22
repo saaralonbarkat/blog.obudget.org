@@ -158,7 +158,7 @@ h1 small {
     color: #ccc;
 }
 
-iframe{
+iframe {
     width: 100%;
     margin: 10px 0;
 }
@@ -829,6 +829,10 @@ footer {
     margin: auto;
 }
 
+.facebookIframe {
+    background-color: rgba(213, 213, 220, 0.76);
+}
+
 /* =============================================================================================================
 	MEDIA QURIES 768
    ============================================================================================================= */
@@ -881,10 +885,12 @@ footer {
     .mainPostTitel {
         font-size: 30px;
         padding: 0 15px;
+        margin: 0;
     }
 
     .content {
-        padding: 50px 15px 0;
+        padding: 30px 15px 0;
+        clear: both;
     }
 
     .bottomPost-block {
@@ -1032,5 +1038,10 @@ footer {
         width: 100%;
         margin: auto;
         padding: 0 10px;
+    }
+
+    .mainBanner {
+        width: 200%;
+        float: left;
     }
 }
