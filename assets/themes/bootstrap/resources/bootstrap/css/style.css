@@ -1119,4 +1119,8 @@ footer {
         width: 100%;
         float: left;
     }
+
+    .thumbnail {
+        height: 170px;
+    }
 }
