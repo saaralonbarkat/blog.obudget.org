@@ -833,6 +833,80 @@ footer {
     background-color: rgba(213, 213, 220, 0.76);
 }
 
+.thumbnail_list {
+    margin: 0;
+    background-color: rgba(230, 230, 236, 0.71);
+    padding: 10px;
+    -webkit-box-shadow: inset 0px 1px 10px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: inset 0px 1px 10px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: inset 0px 1px 10px 0px rgba(0, 0, 0, 0.15);
+}
+
+.thumbnail {
+    padding: 10px;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 0;
+    height: 130px;
+    display: table;
+    float: right;
+    background-color: transparent;
+}
+
+.thumbnail a {
+    border: none;
+    box-shadow: none;
+    text-align: center;
+    background-color: white;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 20px;
+    -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.4);
+    font-size: 17px;
+    color: #179cde;
+}
+
+.thumbnail a:hover {
+    -webkit-box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.3);
+}
+
+.thumbnail a.all {
+    color: white;
+    background-color: #179cde;
+}
+
+.sticker {
+    width: 220px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.telegram_list {
+    border-top: 1px solid #ceced4;
+}
+
+.telegram_list:before {
+    content: "";
+    background: url("/assets/themes/bootstrap/resources/2016-6-11/telegram_logo.png") no-repeat right;
+    display: block;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    top: 4px;
+    position: relative;
+    margin-top: 30px;
+}
+
+.telegram_list h2 {
+    text-align: center;
+    margin: 20px 0 30px;
+}
+
 /* =============================================================================================================
 	MEDIA QURIES 768
    ============================================================================================================= */
@@ -1041,7 +1115,8 @@ footer {
     }
 
     .mainBanner {
-        width: 200%;
+        /*width: 200%;*/
+        width: 100%;
         float: left;
     }
 }
